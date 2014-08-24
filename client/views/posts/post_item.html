@@ -1,0 +1,25 @@
+<template name="postItem">
+    <div class="post">
+        <div>
+
+            <div class="span4 text-center">
+                <h4><a href="mailto:{{email}}?subject=I would like to trade!">{{url}}</a></h4>
+            </div>
+
+            <div class="span4 text-center">
+                <h4>{{have}}</h4>
+            </div>
+
+            <div class="span3 text-center">
+                <h4>{{want}}</h4>
+            </div>
+
+            <p class="span1">
+                {{#if ownPost}}
+                    <a href="{{pathFor 'postEdit'}}" class="fa fa-pencil-square-o fa-lg" title="Edit Item"></a>
+                    <a class="fa fa-times-circle fa-lg delete" href="#"></a>
+                {{/if}}
+            </p>
+        </div>
+    </div>
+</template>

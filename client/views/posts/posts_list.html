@@ -1,0 +1,19 @@
+<template name="postsList">
+
+    <div class="posts">
+        <div class="row-fluid">
+            <div class="span4 text-center">
+                <h3>Suite</h3>
+            </div>
+            <div class="span4 text-center">
+                <h3>Items Up for Exchange</h3>
+            </div>
+            <div class="span3 text-center">
+                <h3>Items Desired</h3>
+            </div>
+        </div>
+        {{#each posts}}
+            {{> postItem}}
+        {{/each}}
+    </div>
+</template>

@@ -1,0 +1,36 @@
+<template name="postEdit">
+  <form class="main">
+    <div class="control-group">
+            <label class="control-label" for="url">Suite</label>
+            <div class="controls">
+                <input name="url" type="text" value="{{url}}" placeholder="Your Suite"/>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="have">I have: </label>
+            <div class="controls">
+                <input name="have" type="text" value="{{have}}" placeholder="[item you have]"/>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="want">I want: </label>
+            <div class="controls">
+                <input name="want" type="text" value="{{want}}" placeholder="[item you want]"/>
+            </div>
+        </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary submit"/>
+        </div>
+    </div>
+    <hr/>
+    <div class="control-group">
+        <div class="controls">
+            <a class="btn btn-danger delete" href="#">Remove Item</a>
+        </div>
+    </div>
+  </form>
+</template>
